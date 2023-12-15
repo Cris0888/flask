@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+body{
+    
+}
+.formulario{
+    padding: 100px;
+    background-color: #000000e0;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 430px;
+    top: 135px;
+    border-radius: 20px;
+    align-items: center;
+}
+#titulo{
+    font-size: 20px;
+    position: relative;
+    bottom: 65px;
+    left: 25px;
+    color: #fff;
+}
+input{
+    width: 100%;
+    padding: 2%;
+    position: relative;
+    bottom: 50px;
+    ;
+
+}
+#password{
+    margin-top: 30px;
+}
+.boton{
+    position: relative;
+    left: 110px;
+    bottom: 15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #031477;
+    border-color: #031477;
+    color: #fff;
+
+}
+::placeholder{
+    position: relative;
+    left: 15px;
+    color: rgb(5, 4, 4);
+    
+}

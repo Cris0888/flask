@@ -1,0 +1,22 @@
+nav{
+    height: 50px;
+    background-color:#17181C;
+    position: relative;
+    bottom: 20px;
+    
+}
+nav ul{
+    list-style: none;
+
+}
+nav  li{
+    float: left; 
+    margin-left: 60px;
+    margin-top: 14px;
+
+}
+nav a{
+    color: blue;
+    text-decoration: none;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/principal.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>login</title>
+</head>
+<body id="body">
+    {%if denegado%}
+    <div class="alert alert-danger" role="alert">
+        <a href="#" class="alert-link"></a>
+        <strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg> Señor usuario hay un error al ingresar sus datos {{denegado}}</strong>
+    </div>
+    {%endif%}
+
+        <form action="/validacion" method="post">
+        <div id="heredero">
+            <p id="descripcion">INICIO DE SECCION</p>
+            <div id="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Digita tu Nombre" required>
+        
+            </div>
+            <div id="contraseña">
+                <input type="password" name="password" id="contaseña" placeholder="Digita tu Contraseña"  required>
+            </div>
+            <div id="boton">
+                <button type="submit" id="btn"><p id="letra-boton">ENVIAR</p></button>
+            </div>
+    
+                <div id="registrador">
+                    <p>¿no tienes cuenta?<a href="/registro">REGISTRATE</a></p>
+                </div>
+        </div>
+        
+        </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

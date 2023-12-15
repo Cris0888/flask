@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+}
+body{
+    background: url("https://img.freepik.com/fotos-premium/primer-plano-faros-coches-lujo-moderno-concepto-auto-deportivo-caro_427248-551.jpg?w=740");
+    background-size: cover;
+    background-size: 100%;
+}
+.datos{
+    height: 425px;
+    width: 400px;
+    background-color: #000000bb;
+    position: relative;
+    left: 460px;
+    top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.descripcion{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+.propietario,.tipo,.marca,.modelo,.nacionalidad{
+    margin-top: 10px;
+    color: #fff;
+}
+label{
+    position: relative;
+}
+select{
+    height: 27px;
+    width: 190px;
+}
+
+.boton{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: 20px;;
+    left: px;
+    border-radius: 10px;
+    background-color: #031477;
+    color: #fff;
+}
